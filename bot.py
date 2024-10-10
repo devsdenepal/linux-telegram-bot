@@ -41,7 +41,7 @@ async def periodic_news_updates(application):
 
 # Main function
 async def main():
-    application = Application.builder().token("7768294896:AAEBtyS2YA0LOlfaCt_5vmCrXPIskw6c3gI").build()
+    application = Application.builder().token("").build()
 
     # Start the background task for sending news automatically
     application.job_queue.run_once(periodic_news_updates(application), 0)
